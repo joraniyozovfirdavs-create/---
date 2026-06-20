@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Евразия - школа иностранных языков</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="./scss/main.css">
+    <link rel="icon" type="img/svg" href="./images/icon.png">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <div class="header_top">
+                <div class="header_left">
+                    <a href="#" class="logo">
+                        <img src="./images/logo.png" alt="logo" width="350px" height="100px">
+                    </a>
+
+                    <div class="location-dropdown">
+                        <div class="location-trigger" id="locationTrigger">
+                            <div class="city-row">
+                                <span class="current-city" id="currentCity">Москва</span>
+                                <svg class="arrow-icon" width="8" height="6" viewBox="0 0 8 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 6L0 1.5H8L4 6Z" fill="#5D7FE6" />
+                                </svg>
+                            </div>
+                            <div class="sub-text">Онлайн | по миру</div>
+                        </div>
+
+                        <div class="dropdown-menu" id="dropdownMenu">
+                            <ul>
+                                <li class="dropdown-item active" data-city="Москва">Москва</li>
+                                <li class="dropdown-item" data-city="Санкт-Петербург">Санкт-Петербург</li>
+                                <li class="dropdown-item" data-city="Новосибирск">Новосибирск</li>
+                                <li class="dropdown-item" data-city="Екатеринбург">Екатеринбург</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <a href="#" class="header_tell">7 (499) 911-27-54</a>
+
+                    <div class="header_icons">
+                        <a href="#" class="telegram">
+                            <svg width="25" height="25" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM16.64 8.8C16.49 10.38 15.85 14.18 15.52 15.93C15.38 16.67 15.11 16.92 14.84 16.94C14.27 17 13.84 16.57 13.29 16.21C12.43 15.65 11.94 15.3 11.11 14.75C10.15 14.12 10.77 13.77 11.32 13.2C11.46 13.05 13.97 10.77 14.02 10.56C14.02 10.53 14.03 10.43 13.97 10.38C13.91 10.33 13.82 10.35 13.76 10.36C13.67 10.38 12.3 11.29 9.65 13.08C9.26 13.35 8.91 13.48 8.59 13.47C8.24 13.46 7.56 13.27 7.06 13.11C6.44 12.91 5.95 12.8 5.99 12.46C6.01 12.28 6.26 12.1 6.74 11.91C9.72 10.61 11.71 9.75 12.72 9.33C15.61 8.13 16.21 7.92 16.6 7.92C16.69 7.92 16.89 7.94 17.02 8.05C17.13 8.14 17.16 8.28 17.17 8.38C17.17 8.44 17.16 8.64 16.64 8.8Z"
+                                    fill="#2EA6DA" />
+                            </svg>
+                        </a>
+
+                        <a href="#" class="whatsapp">
+                            <svg width="25" height="25" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.004 2C6.48 2 2 6.48 2 12.004C2 13.908 2.532 15.684 3.456 17.208L2.136 22L7.044 20.712C8.508 21.54 10.2 22.008 12.004 22.008C17.528 22.008 22 17.528 22 12.004C22 6.48 17.528 2 12.004 2ZM17.124 16.128C16.908 16.74 16.032 17.244 15.396 17.388C14.868 17.508 14.184 17.604 11.856 16.632C8.88 15.396 6.96 12.384 6.816 12.192C6.672 12 5.616 10.596 5.616 9.144C5.616 7.692 6.36 6.996 6.672 6.684C6.912 6.444 7.308 6.324 7.692 6.324C7.812 6.324 7.92 6.336 8.016 6.336C8.28 6.348 8.412 6.36 8.592 6.792C8.82 7.344 9.372 8.688 9.444 8.832C9.516 8.976 9.588 9.168 9.492 9.36C9.396 9.552 9.312 9.648 9.168 9.816C9.024 9.984 8.868 10.128 8.736 10.296C8.592 10.452 8.436 10.62 8.604 10.908C8.772 11.196 9.348 12.132 10.188 12.888C11.28 13.86 12.168 14.172 12.48 14.304C12.72 14.4 13.008 14.376 13.18 14.196C13.404 13.956 13.68 13.56 13.96 13.176C14.16 12.888 14.412 12.852 14.676 12.948C14.94 13.044 16.344 13.74 16.632 13.884C16.92 14.028 17.112 14.1 17.184 14.22C17.256 14.34 17.34 14.976 17.124 16.128Z"
+                                    fill="#4CCE5A" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="header_right">
+                    <div class="header-action-block">
+
+                        <ul class="mini-navigation">
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Преподаватели</a></li>
+                            <li><a href="#">Акции и скидки</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+
+                        <div class="search-and-button-row">
+                            <div class="search-field-wrapper">
+                                <input type="text" placeholder="Поиск по сайту...">
+                                <svg class="search-lupa-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.5 6.5C11.5 9.26142 9.26142 11.5 6.5 11.5C3.73858 11.5 1.5 9.26142 1.5 6.5C1.5 3.73858 3.73858 1.5 6.5 1.5C9.26142 1.5 11.5 3.73858 11.5 6.5Z"
+                                        stroke="#9AA0A6" stroke-width="1.5" />
+                                    <path d="M10 10L14.5 14.5" stroke="#9AA0A6" stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <button class="submit-application-btn">Отправить заявку</button>
+                        </div>
+
+                        <div class="payment-currency-info">
+                            Мы принимаем оплату из любой точки мира в любой валюте <span class="currency-symbols">$ €
+                                ₽</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="header_bottom">
+                <nav class="header_menu">
+                    <ul>
+                        <li><a href="#">Выбери другой язык</a></li>
+                        <li><a href="#">Дополнительные курсы</a></li>
+                        <li><a href="#">Онлайн</a></li>
+                        <li><a href="#">За рубежом</a></li>
+                        <li><a href="#">Корпоративное</a></li>
+                        <li><a href="#">Расписание и цены</a></li>
+                        <li><a href="#">Тестирование</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- /header -->
+
+    <main>
+
+        <!-- hero -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero_top">
+                    <div class="top_left">
+                        <h1>
+                            Говорите <br> <span>на английском</span> свободно и уверенно
+                        </h1>
+
+                        <p>
+                            Курсы английского языка в Москве и онлайн в школе с 20-летней историей
+                        </p>
+
+                        <button type="button">Записаться на пробный урок</button>
+                    </div>
+
+                    <img class="top_center" src="./images/hero_center_img.png" alt="hero_center_img">
+
+                    <div class="top_right">
+                        <div class="card_1">
+                            <div class="card_top">
+                                <img src="./images/hero_card_img.svg" alt="hero_card_img">
+                            </div>
+
+                            <div class="card_bottom">
+                                <p>
+                                    2 педагога: русский + носитель
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card_2">
+                            <img src="./images/hero_sertificat.svg" alt="hero_sertificat">
+
+                            <p>
+                                Официальный сертификат гособразца РФ
+                            </p>
+                        </div>
+
+                        <div class="card_3">
+                            <p class="text_left">Обучаем языкам</p>
+                            <p class="text-right">с <span>2004</span>г</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero_end">
+                    <div class="hero_end--box">
+                        <span class="rating-value" data-target="4.9">0.0</span>
+                        <img src="./images/yandex.svg" alt="yandex">
+                    </div>
+
+                    <div class="hero_end--box">
+                        <span class="rating-value" data-target="4.9">0.0</span>
+                        <img src="./images/2gis.svg" alt="2gis">
+                    </div>
+
+                    <div class="hero_end--box">
+                        <span class="rating-value" data-target="5.0">0.0</span>
+                        <img src="./images/google.svg" alt="google">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /hero -->
+
+        <!-- section_1 -->
+        <section class="section_1">
+            <div class="container">
+                <div class="section_1--top">
+                    <h2>Курсы английского языка <span>для ваших целей</span></h2>
+                </div>
+
+                <div class="section_1--end">
+                    <div class="end_card">
+                        <div class="card_top">
+                            <img src="./images/card_img_1.svg" alt="card_img_1" width="44px" height="44px">
+                            <h3>Английский для работы и карьеры</h3>
+                            <p>
+                                Свободно ведёте переговоры, пишете письма, проходите собеседования. Английский для
+                                работы,
+                                который поднимет вам зарплату
+                            </p>
+                        </div>
+
+                        <div class="card_bottom">
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="end_card">
+                        <div class="card_top">
+                            <img src="./images/card_img_2.svg" alt="card_img_2" width="44px" height="44px">
+                            <h3>Английский для путешествий</h3>
+                            <p>
+                                Бронируете отели, общаетесь в аэропорту, чувствуете себя своим в любой стране.
+                                Английский для путешествий без стресса
+                            </p>
+                        </div>
+                        <div class="card_bottom">
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="end_card">
+                        <div class="card_top">
+                            <img src="./images/card_img_3.svg" alt="card_img_3" width="44px" height="44px">
+                            <h3>Английский для начинающих (с нуля)</h3>
+                            <p>
+                                Для тех, кто никогда не учил или хочет начать с самого начала. Английский для
+                                начинающих с поддержкой и быстрым результатом
+                            </p>
+                        </div>
+                        <div class="card_bottom">
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="end_card card_2">
+                        <div class="card_top">
+                            <img src="./images/card_img_4.svg" alt="card_img_4" width="44px" height="44px">
+                            <h3>Подготовка к экзаменам (ЕГЭ, ОГЭ, IELTS)</h3>
+                            <p>
+                                Максимальные баллы для поступления в вуз мечты или учёбы за рубежом
+                            </p>
+                        </div>
+                        <div class="card_bottom">
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="end_card card_2">
+                        <div class="card_top">
+                            <img src="./images/card_img_5.svg" alt="card_img_5" width="44px" height="44px">
+                            <h3>Для детей и подростков</h3>
+                            <p>
+                                Английский как родной: смотрим видео в оригинале, не боимся говорить, побеждаем
+                                на олимпиадах
+                            </p>
+                        </div>
+                        <div class="card_bottom">
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="end_card card_2">
+                        <div class="card_top">
+                            <img src="./images/card_img_6.svg" alt="card_img_6" width="44px" height="44px">
+                            <h3>Тест на уровень английского</h3>
+                            <p>
+                                Узнайте, где вы сейчас и сколько времени нужно до цели. Бесплатно и без регистрации
+                            </p>
+                        </div>
+                        <div class="card_bottom">
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /section_1 -->
+
+        <!-- section_2 -->
+        <section class="section_2">
+            <div class="container">
+                <div class="section_2--top">
+                    <h2>
+                        <span>Как мы учим:</span> инструменты, которые превратят изучение английского языка в навык
+                    </h2>
+
+                    <p>
+                        Мы решаем главную задачу — вы начинаете говорить уверенно и с первых уроков. Вот как это
+                        работает
+                    </p>
+                </div>
+
+                <div class="section_2--end">
+                    <div class="card_wrapper">
+                        <div class="card_1">
+                            <div class="card_text">
+                                <div class="card_title">
+                                    <h3>
+                                        <span>Два преподавателя</span>
+                                        для полного погружения
+                                    </h3>
+                                    <div class="card_number">
+                                        <span>1</span>
+                                    </div>
+                                </div>
+                                <p>
+                                    Русскоязычный педагог даёт структуру и базу. Носитель погружает в живую речь,
+                                    убирает акцент и страх говорить. Такой подход делает обучение английскому
+                                    языку максимально эффективным
+                                </p>
+                            </div>
+
+                            <div class="card_images">
+                                <img src="./images/card_1_img-1.svg" alt="card_1_img">
+                                <div class="card_images_text">
+                                    <span>hello!</span>
+                                </div>
+                                <img src="./images/card_1_img-2.svg" alt="card_1_img">
+                            </div>
+                        </div>
+
+                        <div class="card_2">
+                            <div class="card_text">
+                                <div class="card_title">
+                                    <h3>
+                                        <span>Разговорный клуб</span> с носителем
+                                    </h3>
+                                    <div class="card_number">
+                                        <span>2</span>
+                                    </div>
+                                </div>
+                                <p>
+                                    Встречаемся и говорим без оценок и домашних заданий. Обсуждаем фильмы, новости,
+                                    путешествия — всё, что интересно вам. Лучшая практика для тех, кто хочет свободно
+                                    говорить
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card_3">
+                            <div class="card_text">
+                                <div class="card_title">
+                                    <h3>
+                                        <span>Кейс-метод:</span> язык для реальных задач
+                                    </h3>
+                                    <div class="card_number">
+                                        <span>3</span>
+                                    </div>
+                                </div>
+                                <p>
+                                    С первого урока вы работаете с тем, что важно именно вам: готовите презентацию,
+                                    собеседование или составляете маршрут поездки. Уроки английского языка сразу
+                                    становятся инструментом для решения ваших задач
+                                </p>
+                            </div>
+
+                            <div class="card_images">
+                                <img src="./images/card_3_img-1.svg" alt="card_2_img">
+                                <img src="./images/card_3_img-2.svg" alt="card_2_img">
+                                <img src="./images/card_3_img-3.svg" alt="card_2_img">
+                                <img src="./images/card_3_img-4.svg" alt="card_2_img">
+                                <img src="./images/card_3_img-5.svg" alt="card_2_img">
+                            </div>
+                        </div>
+
+                        <div class="card_4">
+                            <div class="card_img">
+                                <img src="./images/card_4_img-1.png" alt="card_4_img">
+                            </div>
+
+                            <div class="card_text">
+                                <div class="card_title">
+                                    <h3>
+                                        <span>Платформа 24/7:</span> учёба без границ
+                                    </h3>
+                                    <div class="card_number">
+                                        <span>4</span>
+                                    </div>
+                                </div>
+                                <p>
+                                    Весь курс в кармане: все уроки, материалы, домашка всегда под рукой — в телефоне или
+                                    ноутбуке. Удобно заниматься из дома, офиса или любимого кафе
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card_5">
+                            <img src="./images/card_5_img-1.svg" alt="card_5_img">
+
+                            <div class="card_text">
+                                <div class="card_title">
+                                    <h3>
+                                        <span>Прозрачные сроки</span> и измеримый прогресс
+                                    </h3>
+                                    <div class="card_number">
+                                        <span>5</span>
+                                    </div>
+                                </div>
+                                <p>
+                                    Никаких «когда-нибудь заговорю». B1 ровно через 6 месяцев — и вы это видите
+                                    с первого дня. Мы гарантируем результат в программе обучения английскому языку
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /section_2 -->
+
+        <!-- section_3 -->
+        <section class="section_3">
+            <div class="container">
+                <div class="section_3--top">
+                    <div class="top_text_box">
+                        <h3><span>Команда, которая</span> ведет вас к языку</h3>
+
+                        <p class="text-1">
+                            В «Евразии» нет случайных людей. Мы собираем команду, где у каждого своя суперсила
+                        </p>
+
+                        <p class="text-2">
+                            Среди наших наставников — дипломированные специалисты с опытом жизни за границей, эксперты
+                            по подготовке к международным экзаменам и носители. Наша школа английского языка гордится
+                            своими преподавателями
+                        </p>
+                    </div>
+
+                    <div class="top_right">
+                        <div class="top_data-target_box">
+                            <div class="data">
+                                <span>С 2004г</span>
+                                <p>учим английскому без скуки</p>
+                            </div>
+
+                            <div class="data">
+                                <span>2 из 100</span>
+                                <p>столько кандидатов проходят отбор</p>
+                            </div>
+
+                            <div class="data">
+                                <span>30 000+</span>
+                                <p>выпускников достигли своих целей</p>
+                            </div>
+                        </div>
+
+                        <div class="cards_btn">
+                            <button>
+                                <img src="./images/btn_img-1.svg" alt="btn_img">
+                            </button>
+
+                            <button>
+                                <img src="./images/btn_img-2.svg" alt="btn_img">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section_3--end_cards_wrapper">
+                    <div class="card">
+                        <img src="./images/sec_3_card-1_img.svg" alt="sec_3_card">
+
+                        <div class="card_text_box">
+                            <h3>Кевин</h3>
+
+                            <p class="text-1">
+                                Носитель из США, более 20 лет в России
+                            </p>
+
+                            <hr>
+
+                            <p class="text-2">
+                                Учит говорить и мыслить по-английски. После его уроков студенты легко проходят
+                                собеседования
+                                в международные компании и чувствуют себя своими в любой англоязычной среде
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./images/sec_3_card-2_img.svg" alt="sec_3_card">
+
+                        <div class="card_text_box">
+                            <h3>Надежда</h3>
+
+                            <p class="text-1">
+                                Универсальный педагог
+                            </p>
+
+                            <hr>
+
+                            <p class="text-2">
+                                За её плечами — сотни учеников от первоклассников до топ-менеджеров. Надежда находит
+                                ключ к любому возрасту и мягко выводит к свободной речи
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./images/sec_3_card-3_img.svg" alt="sec_3_card">
+
+                        <div class="card_text_box">
+                            <h3>Джозеф</h3>
+
+                            <p class="text-1">
+                                Носитель, эксперт методики «Евразия»
+                            </p>
+
+                            <hr>
+
+                            <p class="text-2">
+                                Создаёт на уроках атмосферу полного доверия. С ним студенты быстро снимают барьер
+                                и начинают говорить бегло и естественно
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./images/sec_3_card-4_img.svg" alt="sec_3_card">
+
+                        <div class="card_text_box">
+                            <h3>Екатерина</h3>
+
+                            <p class="text-1">
+                                Мастер игрового обучения
+                            </p>
+
+                            <hr>
+
+                            <p class="text-2">
+                                Превращает изучение английского в удовольствие. Её ученики — дети и подростки — делают
+                                прогресс незаметно для себя: через игры, увлечения и живой интерес
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /section_3 -->
+
+        <!-- section_4 -->
+        <section class="section_4">
+            <div class="container">
+                <div class="section_4--left">
+                    <img src="./images/section_4_img.svg" alt="section_4_img">
+                </div>
+
+                <div class="section_4--right">
+                    <h2>Проверьте методику в деле</h2>
+
+                    <ul>
+                        <li>
+                            <img src="./images/li_img.svg" alt="li_img"> Познакомьтесь с
+                            преподавателем
+                        </li>
+                        <li>
+                            <img src="./images/li_img.svg" alt="li_img"> Оцените подход на
+                            практике
+                        </li>
+                        <li>
+                            <img src="./images/li_img.svg" alt="li_img"> Узнайте, сколько
+                            времени нужно до цели
+                        </li>
+                    </ul>
+
+                    <button type="button">Записаться на пробный урок</button>
+                </div>
+            </div>
+        </section>
+        <!-- /section_4 -->
+
+        <!-- section_5 -->
+        <section class="section_5">
+            <div class="container">
+                <h2>Всё, чтобы учиться было <span>комфортно</span></h2>
+
+                <div class="section_5--box">
+                    <h3>Запись пропущенных уроков</h3>
+
+                    <p>
+                        Заболели, уехали, задержались? Ничего не потеряете — все уроки изучения английского языка
+                        будут в записи
+                    </p>
+                </div>
+
+                <div class="section_5--box">
+                    <h3>Личный куратор</h3>
+
+                    <p>
+                        Заботится, чтобы вы взяли от обучения всё. Вовремя подскажет, какие инструменты включить,
+                        пригласит в разговорный клуб, поможет не потерять ритм. С ним учёба идёт легче и результативнее
+                    </p>
+                </div>
+
+                <div class="section_5--box">
+                    <h3>Оплата от работодателя</h3>
+
+                    <p>
+                        Поможем оформить документы, если компания готова платить за ваше обучение
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- /section_5 -->
+
+        <!-- section_6 -->
+        <section class="section_6">
+            <div class="container">
+                <div class="section_6--top">
+                    <h2>Курсы английского языка стоимость и форматы</h2>
+                </div>
+
+                <div class="section_6--end">
+                    <div class="card--wrapper">
+                        <div class="card">
+                            <div class="card_top">
+                                <h3>Индивидуально</h3>
+
+                                <ul>
+                                    <li><img src="./images/li_img_2.svg" alt="li_img">Очно или онлайн</li>
+                                    <li><img src="./images/li_img_2.svg" alt="li_img">Программа под ваши цели</li>
+                                    <li><img src="./images/li_img_2.svg" alt="li_img">Максимальное внимание</li>
+                                </ul>
+                            </div>
+
+                            <div class="card_bottom">
+                                <span>от 1 600 ₽/занятие</span>
+                                <a href="#">Записаться на индивидуальный</a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card_top">
+                                <h3>Очно в группе</h3>
+
+                                <ul>
+                                    <li><img src="./images/li_img_2.svg" alt="li_img">Мини-группы 2–4 человека</li>
+                                    <li><img src="./images/li_img_2.svg" alt="li_img">Уютные классы в центре Москвы</li>
+                                    <li><img src="./images/li_img_2.svg" alt="li_img">Живое общение и поддержка</li>
+                                </ul>
+
+                                <p>
+                                    м. Краснопресненская, м. Курская, м. Октябрьская
+                                </p>
+                            </div>
+
+                            <div class="card_bottom">
+                                <span>от 1 100 ₽/занятие</span>
+                                <a href="#">Выбрать группу</a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card_top">
+                                <h3>Онлайн</h3>
+
+                                <ul>
+                                    <li><img src="./images/li_img_2.svg" alt="li_img">Учитесь из любой точки (английский
+                                        язык онлайн)</li>
+                                    <li><img src="./images/li_img_2.svg" alt="li_img">Интерактивная платформа</li>
+                                    <li><img src="./images/li_img_2.svg" alt="li_img">Живая практика</li>
+                                </ul>
+                            </div>
+
+                            <div class="card_bottom">
+                                <span>от 800 ₽/занятие</span>
+                                <a href="#">Присоединиться онлайн</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="end_info">
+                        <div class="info_top">
+                            <p>
+                                Способы оплаты курсов английского языка в Москве
+                            </p>
+                        </div>
+
+                        <ul>
+                            <li><img src="./images/li_img.svg" alt="li_img">По карте</li>
+                            <li><img src="./images/li_img.svg" alt="li_img">В рассрочку</li>
+                            <li><img src="./images/li_img.svg" alt="li_img">Материнский капитал</li>
+                            <li><img src="./images/li_img.svg" alt="li_img">Налоговый вычет 13%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /section_6 -->
+
+        <!-- section_7 -->
+        <section class="section_7">
+            <div class="container">
+                <div class="section_7--top">
+                    <h2>Гарантируем результат — <span>официально</span></h2>
+                </div>
+
+                <div class="section_7--bottom">
+                    <div class="box_1">
+                        <h3>Мы уверены в своей методике</h3>
+
+                        <p>
+                            Посещайте 90% занятий, выполняйте задания — и вы достигнете цели. Если результата не будет,
+                            продолжим учить бесплатно. Так работает только лучшая школа английского языка
+                        </p>
+                    </div>
+
+                    <div class="box_2">
+                        <img src="./images/hero_sertificat.svg" alt="sertificat">
+
+                        <div class="box_2_text">
+                            <h3>Сертификат об окончании</h3>
+
+                            <p>
+                                После полного курса английского языка получаете официальный сертификат, который
+                                подтверждает ваш уровень
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="box_3">
+                        <div class="box_3_top">
+                            <p class="txt_1">Разговорный клуб</p>
+                            <p class="txt_2">Платформа 24/7</p>
+                        </div>
+
+                        <div class="box_3_center">
+                            <p class="txt_1">План обучения под ваши цели</p>
+                            <p class="txt_2">Онлайн</p>
+                        </div>
+
+                        <div class="box_3_bottom">
+                            <p class="txt_1">В группе в Москве</p>
+                            <p class="txt_2">Индивидуально</p>
+                        </div>
+                    </div>
+
+                    <div class="box_4">
+                        <img src="./images/sertificat_2.svg" alt="sertificat_2">
+
+                        <div class="box_4_text">
+                            <h3>Лицензия Министерства образования</h3>
+
+                            <p>
+                                Работаем официально. Имеем право обучать и выдавать документы государственного образца
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /section_7 -->
+
+        <!-- section_8 -->
+        <section class="section_8">
+            <div class="container">
+                <div class="section_8--left">
+                    <div class="left_top">
+                        <h2><span>Истории успеха</span> наших студентов</h2>
+
+                        <p>
+                            Отзывы тех, кто уже говорит на английском свободно и изменил свою жизнь
+                        </p>
+
+                        <button>Записаться на пробный урок</button>
+                    </div>
+
+                    <div class="left_bottom">
+                        <button class="btn_1"><img src="./images/btn_img-1.svg" alt="btn_img"></button>
+                        <button class="btn_2"><img src="./images/btn_img-2.svg" alt="btn_img"></button>
+                    </div>
+                </div>
+
+                <div class="section_8_right--cards_wrapper">
+                    <div class="card">
+                        <div class="card_left--box">
+                            <div class="left_text">
+                                <h4><span>Точка А:</span> Нужен был английский для общения с коллегами</h4>
+                                <h4><span>Точка Б:</span> Общается с партнёрами, чувствует реальный прогресс</h4>
+
+                                <p>
+                                    «На работе взаимодействую с партнёрами из Европы. Выбрал „Евразию“, потому что жена
+                                    тоже
+                                    здесь учится. Качественный подход к знаним. Удобно, комфортно и результативно»
+                                </p>
+
+                                <hr>
+
+                                <span class="teacher">Преподаватель: Руслана</span>
+                            </div>
+
+                            <div class="left_profil">
+                                <img src="./images/pavel_durov.svg" alt="pavel_durov">
+
+                                <div class="profil_text">
+                                    <a href="#">Павел Д.</a>
+                                    <span>Москва</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card_right--video_box">
+                            <iframe width="295" height="430"
+                                src="https://www.youtube.com/embed/ufWLXkWw5cU?si=R6IPzU13OgQkMhbg"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card_left--box">
+                            <div class="left_text">
+                                <h4><span>Точка А:</span> Нужно было сдать IELTS для поступления</h4>
+                                <h4><span>Точка Б:</span> Получила 7.5 и поступила в магистратуру</h4>
+
+                                <p>
+                                    «Я очень переживала за письменную часть. Мой преподаватель Надежда просто „разложила
+                                    по полочкам“ структуру эссе. Мы проработали столько тем, что результат превзошёл
+                                    ожидания!»
+                                </p>
+
+                                <hr>
+
+                                <span class="teacher">Преподаватель: Надежда, эксперт по подготовке к экзаменам</span>
+                            </div>
+
+                            <div class="left_profil">
+                                <img src="./images/darya.svg" alt="darya">
+
+                                <div class="profil_text">
+                                    <a href="#">Дарья Р.</a>
+                                    <span>студентка</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card_right--video_box">
+                            <iframe width="295" height="430"
+                                src="https://www.youtube.com/embed/6kOhLIHNXdM?si=0j4eJl1OyBeRu__e"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card_left--box">
+                            <div class="left_text">
+                                <h4><span>Точка А:</span> Дочь отказывалась учить английский в школе</h4>
+                                <h4><span>Точка Б:</span> Смотрит видео блогеров в оригинале</h4>
+
+                                <p>
+                                    «Для меня было чудом, когда Маша сказала: „Мам, а можно я ещё посмотрю видео,
+                                    которое Джозеф скинул?“. Преподаватель нашёл подход через её увлечения»
+                                </p>
+
+                                <hr>
+
+                                <span class="teacher">Преподаватель: Джозеф, носитель языка</span>
+                            </div>
+
+                            <div class="left_profil">
+                                <img src="./images/yelena.svg" alt="pavel_durov">
+
+                                <div class="profil_text">
+                                    <a href="#">Елена</a>
+                                    <span>мама Маши (13 лет)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card_right--video_box">
+                            <iframe width="295" height="430"
+                                src="https://www.youtube.com/embed/dPkcEyyYQns?si=lhTHcWcmvm1e3wgO"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /section_8 -->
+
+        <!-- section_9 -->
+        <section class="section_9">
+            <div class="container">
+                <div class="section_9--left">
+                    <img src="./images/section_9_img.png" alt="section_9_img">
+                </div>
+
+                <div class="section_9--right">
+                    <h2>Проверьте методику в деле</h2>
+
+                    <ul>
+                        <li>
+                            <img src="./images/li_img.svg" alt="li_img"> Познакомьтесь с
+                            преподавателем
+                        </li>
+                        <li>
+                            <img src="./images/li_img.svg" alt="li_img"> Оцените подход на
+                            практике
+                        </li>
+                        <li>
+                            <img src="./images/li_img.svg" alt="li_img"> Узнайте, сколько
+                            времени нужно до цели
+                        </li>
+                    </ul>
+
+                    <button type="button">Получить бесплатную консультацию</button>
+                </div>
+            </div>
+        </section>
+        <!-- /section_9 -->
+
+        <!-- section_10 -->
+        <section class="section_10">
+            <div class="container">
+                <div class="section_10--top">
+                    <div class="top_center">
+                        <h2>Английский, который <span>ведет дальше</span></h2>
+
+                        <p>«Евразия» — ваш проводник в мир международных возможностей</p>
+                    </div>
+
+                    <div class="top_btn_box">
+                        <button><img src="./images/btn_img-1.svg" alt="btn_img"></button>
+                        <button><img src="./images/btn_img-2.svg" alt="btn_img"></button>
+                    </div>
+                </div>
+
+                <div class="section_10--end">
+                    <div class="card">
+                        <h3>Летние лагеря за рубежом</h3>
+
+                        <a href="#">Подробнее</a>
+                    </div>
+
+                    <div class="card">
+                        <h3>Языковые курсы в Дубае</h3>
+
+                        <a href="#">Подробнее</a>
+                    </div>
+
+                    <div class="card">
+                        <h3>Поступление в зарубежные вузы</h3>
+
+                        <a href="#">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /section_10 -->
+
+        <!-- section_11 -->
+        <section class="section_11">
+            <div class="container">
+                <div class="section_11--top">
+                    <h2><span>Английский от экспертов:</span> контент, который работает</h2>
+                </div>
+
+                <div class="section_11--end">
+                    <div class="box_VK">
+                        <div class="box_text">
+                            <h3>Группа в VK</h3>
+
+                            <p>Английский в вашем кармане: разборы фильмов, идиомы, лайфхаки и анонсы разговорных клубов
+                            </p>
+
+                            <a href="#">Подписаться</a>
+                        </div>
+
+                        <img src="./images/VK_box_img.png" alt="VK_box_img">
+                    </div>
+
+                    <div class="left_box_wrapper">
+                        <div class="box_video">
+                            <div class="left_text">
+                                <h3>Видео-канал</h3>
+
+                                <p>Живые уроки с нашими преподавателями, разборы грамматики, интервью с носителями
+                                    ивлоги изпутешествий
+                                </p>
+
+                                <a href="#">Смотреть</a>
+                            </div>
+
+                            <img src="./images/video_box_img.png" alt="video_box_img">
+                        </div>
+
+                        <div class="box_blog">
+                            <div class="left_text">
+                                <h3>Блог</h3>
+
+                                <p>Статьи для тех, кто хочет глубже понять язык: разборы времён, ловушки перевода,
+                                    советы для быстрого прогресса
+                                </p>
+
+                                <a href="#">Читать</a>
+                            </div>
+
+                            <img src="./images/blog_box_img.png" alt="blog_box_img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /section_11 -->
+
+        <!-- section_12 -->
+        <section class="section_12">
+            <div class="container">
+                <div class="section_12--left">
+                    <h2>
+                        Как понять, <span>какой курс</span> английского подойдёт именно вам
+                    </h2>
+
+                    <ul>
+                        <li><img src="./images/li_img_3.svg" alt="li_img_3">На что реально смотреть в программе,
+                            а не в рекламе</li>
+                        <li><img src="./images/li_img_3.svg" alt="li_img_3">Как отличить опытного преподавателя
+                            от случайного</li>
+                        <li><img src="./images/li_img_3.svg" alt="li_img_3">Какие форматы обучения работают, а какие —
+                            пустая трата денег</li>
+                    </ul>
+                </div>
+
+                <div class="section_12--right">
+                    <form class="download-form">
+                        <div class="input_wrapper">
+                            <div class="input-group">
+                                <input type="text" placeholder="Имя" required>
+                            </div>
+                            <div class="input-group">
+                                <input type="tel" placeholder="Телефон" required>
+                            </div>
+                        </div>
+
+                        <div class="chechkbox_wrapper">
+                            <div class="checkbox-group">
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" required>
+                                    <span class="checkmark"></span>
+                                    <span class="label-text">Я даю согласие на обработку персональных данных, а также
+                                        соглашаюсь с политикой конфиденциальности</span>
+                                </label>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <label class="custom-checkbox">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    <span class="label-text">Я даю согласие на получение рекламной информации</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="button-wrapper">
+                            <div class="badge">ТОЛЬКО ПОЛЕЗНО</div>
+                            <button type="submit" class="submit-btn">Скачать чек-лист</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- /section_12 -->
+
+        <!-- section_13 -->
+        <section class="section_13">
+            <div class="container">
+
+                <div class="section_13--top">
+                    <h2>Ответы на важные <span>вопросы</span></h2>
+                </div>
+
+                <div class="section_13--end">
+                    <div class="faq_wrapper">
+
+                        <div class="faq_column">
+                            <div class="faq_item">
+                                <div class="faq_question">
+                                    <span>Как понять, что методика с двумя преподавателями мне подойдёт?</span>
+                                    <div class="faq_icon"></div>
+                                </div>
+                                <div class="faq_answer">
+                                    <p>Наша методика уникальна тем, что один преподаватель объясняет грамматику, а
+                                        второй — носитель языка — помогает закрепить её на практике. Это идеальный
+                                        баланс для быстрого результата.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq_item">
+                                <div class="faq_question">
+                                    <span>Я занятой человек. Что делать, если не успеваю на занятия?</span>
+                                    <div class="faq_icon"></div>
+                                </div>
+                                <div class="faq_answer">
+                                    <p>Все уроки записываются, и вы сможете посмотреть их в любое удобное время. Также у
+                                        вас будет доступ к личному кабинету с материалами курса 24/7.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq_item">
+                                <div class="faq_question">
+                                    <span>Не будет ли скучно, как в школе?</span>
+                                    <div class="faq_icon"></div>
+                                </div>
+                                <div class="faq_answer">
+                                    <p>Никакой зубрежки! Обучение проходит в интерактивном формате, на основе
+                                        современных тем, сериалов, мемов и живого общения с кураторами.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq_item">
+                                <div class="faq_question">
+                                    <span>Смогу ли преодолеть языковой барьер?</span>
+                                    <div class="faq_icon"></div>
+                                </div>
+                                <div class="faq_answer">
+                                    <p>Да, вы начнете говорить уже на первом занятии благодаря специальным разговорным
+                                        техникам и психологической поддержке преподавателей.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq_item">
+                                <div class="faq_question">
+                                    <span>Поможете уложиться в сжатые сроки (переезд, переговоры)?</span>
+                                    <div class="faq_icon"></div>
+                                </div>
+                                <div class="faq_answer">
+                                    <p>Для таких целей у нас предусмотрены интенсивные программы обучения, которые
+                                        адаптируются под ваши конкретные дедлайны.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq_column">
+                            <div class="faq_item">
+                                <div class="faq_question">
+                                    <span>Что будет, если пропущу занятие? Оно пропадёт?</span>
+                                    <div class="faq_icon"></div>
+                                </div>
+                                <div class="faq_answer">
+                                    <p>Занятие не пропадет. Вы сможете пройти его самостоятельно по записям или задать
+                                        вопросы вашему личному ментору.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq_item">
+                                <div class="faq_question">
+                                    <span>Ребёнок-подросток потерял интерес к английскому. Сможете увлечь?</span>
+                                    <div class="faq_icon"></div>
+                                </div>
+                                <div class="faq_answer">
+                                    <p>Мы подбираем темы, интересные именно подросткам: игры, блогинг, технологии,
+                                        компьютерная графика и музыка. Интерес вернется быстро!</p>
+                                </div>
+                            </div>
+
+                            <div class="faq_item">
+                                <div class="faq_question">
+                                    <span>Как следить за прогрессом? Будет обратная связь?</span>
+                                    <div class="faq_icon"></div>
+                                </div>
+                                <div class="faq_answer">
+                                    <p>Каждые две недели проводится срез знаний, а ваш личный куратор отправляет
+                                        подробный разбор сильных сторон и точек роста.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq_item">
+                                <div class="faq_question">
+                                    <span>Что получу после курса? Просто сертификат?</span>
+                                    <div class="faq_icon"></div>
+                                </div>
+                                <div class="faq_answer">
+                                    <p>Помимо официального сертификата, вы получите реальные навыки общения, готовое
+                                        портфолио кейсов и уверенность в своих силах.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- /section_13 -->
+
+        <!-- section_map -->
+        <section class="section_map">
+            <div class="container">
+                <div class="section_map--top">
+                    <h2>Наши школы в Москве</h2>
+
+                    <p>
+                        Проводим уроки английского языка в Москве в трёх удобных локациях в центре. Рядом с метро, с
+                        парковкой, в уютных классах. Выбирайте курсы английского языка в Москве рядом с домом или
+                        работой
+                    </p>
+                </div>
+
+                <div id="map" class="custom-yandex-map"></div>
+            </div>
+        </section>
+        <!-- /section_map -->
+
+    </main>
+
+
+    <!-- footer -->
+    <footer class="main-footer">
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-col">
+                    <div class="footer-block">
+                        <h3 class="footer-title">Наши услуги</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Обучение за рубежом</a></li>
+                            <li><a href="#">Corporate обучение</a></li>
+                            <li><a href="#">Бюро переводов</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-block spacing-top">
+                        <h3 class="group-title" style="margin-top: 200px;">Популярные курсы</h3>
+                        <div class="courses-links-list">
+                            <a href="#">Китайский для взрослых</a>
+                            <a href="#">Китайский для начинающих</a>
+                            <a href="#">Китайский для детей</a>
+                            <a href="#">Китайский онлайн</a>
+                            <a href="#">Обучение в Китае</a>
+                            <a href="#">Корейский для взрослых</a>
+                            <a href="#">Корейский для начинающих</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <div class="footer-block">
+                        <h3 class="footer-title">О компании</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Фото и видео</a></li>
+                            <li><a href="#">Материнский капитал</a></li>
+                            <li><a href="#">Оферта услуг</a></li>
+                            <li><a href="#">Оферта платформы</a></li>
+                            <li><a href="#">Франшиза</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-block spacing-top-large">
+                        <div class="courses-links-list" style="margin-top: 90px;">
+                            <a href="#">Корейский для детей</a>
+                            <a href="#">Корейский онлайн</a>
+                            <a href="#">Обучение в Корее</a>
+                            <a href="#">Турецкий для взрослых</a>
+                            <a href="#">Турецкий для начинающих</a>
+                            <a href="#">Турецкий онлайн</a>
+                            <a href="#">Детский языковой лагерь</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <div class="footer-block">
+                        <ul class="footer-links no-title">
+                            <li><a href="#">Согласие на обработку персональных данных</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Карта сайта</a></li>
+                            <li><a href="#">Вакансии</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-block address-info" style="margin-top: 170px; position: relative; left: 270px;">
+                        <p><strong>Адрес:</strong><br>Москва, metro Курская, Подсосенский переулок, д. 20, стр.1</p>
+                        <a href="#" class="map-link">найти ближайшее к тебе отделение на карте</a>
+                        <p class="work-time"><strong>Время работы:</strong><br>Пн.-Вс. с 10:00 до 22:00</p>
+                    </div>
+                </div>
+
+                <div class="footer-col right-side-col">
+
+                    <div class="contact-info-block">
+                        <div class="phone-block">
+                            <span class="label">Телефон:</span>
+                            <a href="tel:+74995595878" class="phone-number">7 (499) 559-58-78</a>
+                        </div>
+
+                        <div class="messengers">
+                            <a href="#" class="telegram">
+                                <svg width="30" height="30" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM16.64 8.8C16.49 10.38 15.85 14.18 15.52 15.93C15.38 16.67 15.11 16.92 14.84 16.94C14.27 17 13.84 16.57 13.29 16.21C12.43 15.65 11.94 15.3 11.11 14.75C10.15 14.12 10.77 13.77 11.32 13.2C11.46 13.05 13.97 10.77 14.02 10.56C14.02 10.53 14.03 10.43 13.97 10.38C13.91 10.33 13.82 10.35 13.76 10.36C13.67 10.38 12.3 11.29 9.65 13.08C9.26 13.35 8.91 13.48 8.59 13.47C8.24 13.46 7.56 13.27 7.06 13.11C6.44 12.91 5.95 12.8 5.99 12.46C6.01 12.28 6.26 12.1 6.74 11.91C9.72 10.61 11.71 9.75 12.72 9.33C15.61 8.13 16.21 7.92 16.6 7.92C16.69 7.92 16.89 7.94 17.02 8.05C17.13 8.14 17.16 8.28 17.17 8.38C17.17 8.44 17.16 8.64 16.64 8.8Z"
+                                        fill="#2EA6DA" />
+                                </svg>
+                            </a>
+
+                            <a href="#" class="whatsapp">
+                                <svg width="30" height="30" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.004 2C6.48 2 2 6.48 2 12.004C2 13.908 2.532 15.684 3.456 17.208L2.136 22L7.044 20.712C8.508 21.54 10.2 22.008 12.004 22.008C17.528 22.008 22 17.528 22 12.004C22 6.48 17.528 2 12.004 2ZM17.124 16.128C16.908 16.74 16.032 17.244 15.396 17.388C14.868 17.508 14.184 17.604 11.856 16.632C8.88 15.396 6.96 12.384 6.816 12.192C6.672 12 5.616 10.596 5.616 9.144C5.616 7.692 6.36 6.996 6.672 6.684C6.912 6.444 7.308 6.324 7.692 6.324C7.812 6.324 7.92 6.336 8.016 6.336C8.28 6.348 8.412 6.36 8.592 6.792C8.82 7.344 9.372 8.688 9.444 8.832C9.516 8.976 9.588 9.168 9.492 9.36C9.396 9.552 9.312 9.648 9.168 9.816C9.024 9.984 8.868 10.128 8.736 10.296C8.592 10.452 8.436 10.62 8.604 10.908C8.772 11.196 9.348 12.132 10.188 12.888C11.28 13.86 12.168 14.172 12.48 14.304C12.72 14.4 13.008 14.376 13.18 14.196C13.404 13.956 13.68 13.56 13.96 13.176C14.16 12.888 14.412 12.852 14.676 12.948C14.94 13.044 16.344 13.74 16.632 13.884C16.92 14.028 17.112 14.1 17.184 14.22C17.256 14.34 17.34 14.976 17.124 16.128Z"
+                                        fill="#4CCE5A" />
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="email-block">
+                            <span class="label">E-mail:</span>
+                            <a href="mailto:ali@chinatutor.ru">ali@chinatutor.ru</a>
+                        </div>
+
+                        <div class="socials">
+                            <p class="sub-label">Следите за нами в соц.сетях:</p>
+                            <div class="social-icons">
+                                <a href="#" class="soc-icon vk"><img src="./images/wk_logo.webp" width="25" height="25"
+                                        alt="wk"></a>
+                                <a href="#" class="soc-icon yt"><img src="./images/youtube_icon.webp" width="35"
+                                        height="25" alt="youtube"></a>
+                                <a href="#" class="soc-icon rutube"><img src="./images/R_icon.png" width="25"
+                                        height="25" alt="rutube"></a>
+                            </div>
+                        </div>
+                        <div class="rating-block">
+                            <span class="rating-score">⭐️ 4,9</span>
+                            <div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
+                            <p class="rating-text">Рейтинг организации в Яндексе</p>
+                        </div>
+                    </div>
+
+                    <div class="action-block">
+                        <div class="action-buttons">
+                            <button class="btn btn-primary" id="btn-request">Оставить заявку</button>
+                            <button class="btn btn-secondary" id="btn-callback">Обратный звонок</button>
+                        </div>
+
+                        <div class="payments-block">
+                            <p class="sub-label">Принимаем к оплате:</p>
+                            <div class="payment-logos">
+                                <span class="pay-logo mastercard"><img src="./images/Maestro_Logo.svg" width="50"
+                                        height="30" alt="Maestro_Logo"></span>
+                                <span class="pay-logo maestro"><img src="./images/MasterCard_Logo.svg.png" width="50"
+                                        height="30" alt="MasterCard_Logo"></span>
+                                <span class="pay-logo visa"><img src="./images/Visa_logo.svg" width="40" height="30"
+                                        alt="visa"></span>
+                                <span class="pay-logo mir"><img src="./images/mnp_icon.svg" width="50" height="40"
+                                        alt="mir"></span>
+                            </div>
+                            <button class="btn-sbp">Оплатить по</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <hr class="footer-divider">
+
+            <div class="footer-bottom">
+                <p class="copyright">© 2009-2026 Языковая школа "Евразия". Все права защищены.</p>
+                <p class="license">Сведения об образовательной организации: лицензия <br> на образовательную
+                    деятельность №
+                    039704
+                    от 25.10.2018 г.</p>
+            </div>
+
+        </div>
+    </footer>
+    <!-- footer -->
+
+
+    <button class="scroll-to-top" id="scrollTopBtn" title="Наверх">▲</button>
+
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

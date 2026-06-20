@@ -1,0 +1,352 @@
+.header {
+    width: 100%;
+
+    .container {
+        overflow: visible;
+
+        // TUZATILDI: Tepadagi umumiy blok hamma vaqt ustida turishi shart
+        .header_top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 70px;
+            border-bottom: 1px solid rgb(195, 195, 195);
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+
+            // SHU IKKI QATOR QO'SHILDI:
+            position: relative;
+            z-index: 10; // Pastki menyudan (z-index: 1 dan) baland qatlam yaratadi
+
+            .header_left {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+
+                .location-dropdown {
+                    position: relative;
+                    display: inline-block;
+                    font-family: 'Inter', sans-serif;
+                    user-select: none;
+                    width: 156px;
+                    z-index: 100;
+
+                    // Bosiladigan asosiy qism stili
+                    .location-trigger {
+                        cursor: pointer;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 4px 8px;
+                        border-radius: 6px;
+                        transition: background-color 0.2s ease;
+
+                        &:hover {
+                            background-color: #F5F7FF;
+                        }
+
+                        .city-row {
+                            display: flex;
+                            align-items: center;
+                            gap: 6px;
+
+                            .current-city {
+                                font-size: 16px;
+                                font-weight: 500;
+                                color: #5D7FE6;
+                                line-height: 1.2;
+                            }
+
+                            .arrow-icon {
+                                transition: transform 0.2s ease;
+
+                                path {
+                                    fill: #5D7FE6;
+                                }
+                            }
+                        }
+
+                        .sub-text {
+                            font-size: 13px;
+                            color: #5D7FE6;
+                            margin-top: 3px;
+                            font-weight: 400;
+                            opacity: 0.9;
+                        }
+                    }
+
+                    // Menyu ochiq holatda ikonkani tepaga qaratish
+                    &.open {
+                        .location-trigger {
+                            background-color: #EBF0FF;
+                        }
+
+                        .arrow-icon {
+                            transform: rotate(180deg);
+                        }
+
+                        .dropdown-menu {
+                            display: block;
+                        }
+                    }
+
+                    // Shaharlar ro'yxati oynasi stili
+                    .dropdown-menu {
+                        display: none;
+                        position: absolute;
+                        top: calc(100% + 6px);
+                        left: 0;
+                        background-color: #ffffff;
+                        min-width: 160px;
+                        box-shadow: 0 4px 16px rgba(93, 127, 230, 0.15);
+                        border: 1px solid #E3E8FF;
+                        border-radius: 8px;
+                        z-index: 9999;
+
+                        ul {
+                            list-style: none;
+                            padding: 4px 0;
+                            margin: 0;
+                        }
+
+                        .dropdown-item {
+                            padding: 10px 16px;
+                            font-size: 14px;
+                            color: #2D2D2D;
+                            cursor: pointer;
+                            transition: background-color 0.15s ease, color 0.15s ease;
+
+                            &:hover {
+                                background-color: #F5F7FF;
+                                color: #5D7FE6;
+                            }
+
+                            &.active {
+                                background-color: #5D7FE6;
+                                color: #ffffff;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+
+                .header_tell {
+                    display: inline-block;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 150%;
+                    width: 127px;
+
+                    &:hover {
+                        color: #EB6D47;
+                        transition: 0.2s all;
+                    }
+                }
+
+                .header_icons {
+                    display: flex;
+                    align-items: center;
+                    gap: 7px;
+
+                    a {
+                        svg:hover {
+                            display: block;
+                            transition: 0.5s ease;
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+
+            .header_right {
+                .header-action-block {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    gap: 12px;
+                    font-family: 'Inter', sans-serif;
+                    background-color: #ffffff;
+
+                    .mini-navigation {
+                        display: flex;
+                        gap: 20px;
+                        list-style: none;
+
+                        a {
+                            font-size: 14px;
+                            color: #8a8a8a;
+                            text-decoration: none;
+                            font-weight: 400;
+                            transition: color 0.15s ease;
+
+                            &:hover {
+                                color: #5D7FE6;
+                            }
+                        }
+                    }
+
+                    .search-and-button-row {
+                        display: flex;
+                        gap: 12px;
+                        align-items: center;
+
+                        .search-field-wrapper {
+                            position: relative;
+                            width: 310px;
+
+                            input {
+                                width: 100%;
+                                padding: 14px 40px 14px 16px;
+                                border: 1px solid #C4C4C4;
+                                border-radius: 8px;
+                                font-size: 16px;
+                                outline: none;
+                                color: #2D2D2D;
+                                font-family: 'Inter', sans-serif;
+                                background-color: transparent;
+                                transition: border-color 0.25s ease;
+                                cursor: pointer;
+
+                                &:focus {
+                                    border-color: #5D7FE6;
+                                }
+                            }
+
+                            .search-lupa-icon {
+                                position: absolute;
+                                right: 16px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                pointer-events: none;
+                                cursor: pointer;
+
+                                path {
+                                    transition: stroke 0.25s ease;
+                                }
+                            }
+
+                            .dynamic-placeholder {
+                                position: absolute;
+                                left: 16px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                color: #999999;
+                                font-size: 16px;
+                                font-family: 'Inter', sans-serif;
+                                pointer-events: none;
+                                background-color: #ffffff;
+                                padding: 0 4px;
+                                transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+                                    top 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+                                    font-size 0.25s ease,
+                                    color 0.25s ease;
+                            }
+
+                            input:focus~.dynamic-placeholder,
+                            &.has-value .dynamic-placeholder {
+                                top: 0;
+                                font-size: 12px;
+                                color: #5D7FE6;
+                                transform: translateY(-50%);
+                            }
+
+                            input:focus~.search-lupa-icon path {
+                                stroke: #5D7FE6;
+                                cursor: pointer;
+                            }
+
+                            &:not(:focus).has-value {
+                                .dynamic-placeholder {
+                                    color: #999999;
+                                }
+
+                                .search-lupa-icon path {
+                                    stroke: #9AA0A6;
+                                }
+                            }
+                        }
+
+                        .submit-application-btn {
+                            background-color: #5D7FE6;
+                            color: #ffffff;
+                            border: none;
+                            padding: 14px 40px;
+                            border-radius: 8px;
+                            font-size: 16px;
+                            font-weight: 500;
+                            font-family: 'Inter', sans-serif;
+                            cursor: pointer;
+                            transition: background-color 0.2s ease, box-shadow 0.2s ease;
+
+                            &:hover {
+                                background-color: #4468d6;
+                                box-shadow: 0 4px 12px rgba(93, 127, 230, 0.2);
+                            }
+
+                            &:active {
+                                transform: scale(0.98);
+                            }
+                        }
+                    }
+
+                    .payment-currency-info {
+                        font-size: 12.5px;
+                        color: #5f5e5e;
+                        font-weight: 400;
+                        line-height: 150%;
+
+                        .currency-symbols {
+                            font-weight: 600;
+                            color: #5D7FE6;
+                            margin-left: 4px;
+                            word-spacing: 4px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .header_bottom {
+            padding: 15px 70px 15px 95px;
+            opacity: 0;
+            transform: translateY(15px);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+
+            // TUZATILDI: .header_top dan pastki qatlamda turishi kafolatlandi
+            position: relative;
+            z-index: 1;
+
+            .header_menu {
+                ul {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    a {
+                        font-size: 18px;
+                        line-height: 150%;
+                        font-weight: 600;
+
+                        &:hover {
+                            transition: 0.2s ease;
+                            color: #EB6D47;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.animated {
+        .header_top {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .header_bottom {
+            opacity: 1;
+            transform: translateY(0);
+            transition-delay: 0.2s;
+        }
+    }
+}
